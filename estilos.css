@@ -1,7 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
-.botonera{
-	width: 1200px;
-	height: 100px;
-	background: pink;
+#titulo-principal{
+	font-family: "Baloo 2", Yondu, Metropolis;
+	font-size: 45px;
+	color: #1E93A2;
+	display: flex;
+	flex-direction: column;
+}
+h2{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	color: #10F2D8;
+	align-content:center; 
+}
+h3{
+	font-family: "Baloo 2", Yondu, Metropolis;
+	font-size: 20px;
+}
+p{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+ol{
+	display: inline; 
+	padding-left: 10px;
+	border: #21ACAD solid;
 }
