@@ -1,20 +1,50 @@
 @charset "utf-8";
 /* CSS Document */
+body{
+	background-color: black;
+	display: flex;
+	flex-direction:column;
+	justify-content:flex-start;
+}
+h1,h2,h3,p,section, .etc{
+	font-family: "Baloo 2", Yondu, Metropolis;
+	color: white;
+}
 nav{
 	background-color: darkturquoise;
 	width: 1200px;
-	height: 800px;
+	height: 50px;
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
 }
-
-.botonera{
-	width: 100px;
-	height: 50px;
+nav ul{
+	list-style: none;
+	width: 500px;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav li{
+	color: white;
 }
 .botonera a{
+	flex-direction: column;
+	justify-content:center;
 	text-decoration: none;
-	color: #000000;
+	background-color:grey;
+	width: 1200px;
+	height: 85px;
+	padding: 10px 20px;
+	border: 2px solid black;
 }
-
+.botonera a:hover{
+	color: #1F936B;
+	background-color:black;
+}
+.redes-sociales{
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+	lign-items: center;
+}
