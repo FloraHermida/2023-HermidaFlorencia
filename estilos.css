@@ -5,9 +5,9 @@ body{
 	display: flex;
 	flex-direction:column;
 	justify-content:flex-start;
-}
+} /* habría que ver alguna propiedad más de flexbox para que no quede todo el body marginado a la izquierda y empiece a aprovecar más el espacio en blanco */
 h1,h2,h3,p,section, .etc{
-	font-family: "Baloo 2", Yondu, Metropolis;
+	font-family: "Baloo 2", Yondu, Metropolis; /* falta el @font-face para que se cargue correctamente la tipo */
 	color: white;
 }
 nav{
@@ -20,7 +20,7 @@ nav{
 }
 nav ul{
 	list-style: none;
-	width: 500px;
+	width: 500px; /* los anchos fijos traen problemas cuando pasemos a mobile, en este caso capaz es mejor una mezcla entre usar porcentajes y max-width */
 	display:flex;
 	justify-content: space-around;
 	align-items: center;
