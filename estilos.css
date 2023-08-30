@@ -6,9 +6,12 @@ body{
 	flex-direction:column;
 	justify-content:flex-start;
 }
-h1,h2,h3,p,section, .etc{
+h1,h2,h3,section, .etc{
 	font-family: "Baloo 2", Yondu, Metropolis;
 	color: white;
+}
+p{
+	align-content: center;
 }
 nav{
 	background-color: darkturquoise;
@@ -46,5 +49,5 @@ nav li{
 	width: 200px;
 	display: flex;
 	justify-content: space-around;
-	lign-items: center;
+	align-content: center;
 }
