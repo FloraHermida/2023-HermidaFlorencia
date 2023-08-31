@@ -1,21 +1,45 @@
 @charset "utf-8";
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+* {
+	padding: 5px;
+	margin: 5px;
+} 
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
 body{
 	background-color: black;
 	display: flex;
 	flex-direction:column;
 	justify-content:flex-start;
 }
-h1,h2,h3,section, .etc{
+h1{
+	color: white;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-weight: 2000;
+	font-size:200px;
+}
+h2,h3,section, .etc{
 	font-family: "Baloo 2", Yondu, Metropolis;
 	color: white;
 }
 p{
+	font-weight: 500px;
+	font-style: bold;
+	align-items: center;
 	align-content: center;
+	font-family: "Baloo 2", Yondu, Metropolis;
 }
 nav{
-	background-color: darkturquoise;
-	width: 1200px;
+	background-color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding: 0px;
+	margin: 0px;
+	width: 1500px;
 	height: 50px;
 	display: flex;
 	justify-content: space-around;
@@ -24,30 +48,80 @@ nav{
 nav ul{
 	list-style: none;
 	width: 500px;
-	display:flex;
+	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 nav li{
 	color: white;
+}
+nav.botonera {
+	background-color: white;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 .botonera a{
 	flex-direction: column;
 	justify-content:center;
 	text-decoration: none;
 	background-color:grey;
+	color: ivory;
 	width: 1200px;
 	height: 85px;
 	padding: 10px 20px;
-	border: 2px solid black;
+	border: 2px solid grey;
 }
 .botonera a:hover{
-	color: #1F936B;
+	color:#905daa;
 	background-color:black;
 }
+
 .redes-sociales{
 	width: 200px;
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
+	align-items: center;
+}
+footer {
+	background-color: white;
+	color: black;
+	text-align: center;
+	align-content: center;
+	padding: 8px;
+}
+.columna-izquierda, .columna-centro, .columna-derecha {
+	width: 45.33%;
+}
+.columna-izquierda {
+	float: left;
+}
+.columna-izquierda {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.columna-centro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+}
+.columna-izquierda, .columna-derecha {
+	width: 50%;
+	padding: 0;
+}
+
+.columna-izquierda {
+	float: left;
+}
+
+.columna-derecha {
+	float: right;
 }
