@@ -19,7 +19,7 @@ body{
 }
 h1{
 	color: white;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"; /*si vas a importar más de una tipo tenés que cambiar el @import porque sino no funcionan, sigo viendo todo en times */
 	font-weight: 2000;
 	font-size:200px;
 }
@@ -28,9 +28,9 @@ h2,h3,section, .etc{
 	color: white;
 }
 p{
-	font-weight: 500px;
-	font-style: bold;
-	align-items: center;
+	font-weight: 500px; /* el peso de las fuentes no se mide en px, solo con el número*/
+	font-style: bold; /* esta propiedad no se usa asi! bold es el peso de la fuente, no el estilo */
+	align-items: center; /* estás usando propidades de flex, pero hay un paso anterior que te estás olvidando para que flex se active */
 	align-content: center;
 	font-family: "Baloo 2", Yondu, Metropolis;
 }
@@ -65,7 +65,7 @@ nav.botonera {
 	justify-content: space-around;
 	align-items: center;
 }
-.botonera a{
+.botonera a{ /* hay muchas de las propiedadde que no están funcionando, si abrís el inspector e inspeccionás las <a> te va a poder decir el porqué */
 	flex-direction: column;
 	justify-content:center;
 	text-decoration: none;
@@ -91,7 +91,7 @@ nav.botonera {
 footer {
 	background-color: white;
 	color: black;
-	text-align: center;
+	text-align: center; /* esta propiedad de flex no funciona porque falta algo más */
 	align-content: center;
 	padding: 8px;
 }
