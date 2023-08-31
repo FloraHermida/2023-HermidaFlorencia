@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
 * {
 	padding: 5px;
 	margin: 5px;
@@ -23,13 +24,18 @@ h1{
 	font-weight: 2000;
 	font-size:200px;
 }
-h2,h3,section, .etc{
+h3{
+	font-family: 'Rubik Glitch', cursive;
+	color: white;
+}
+h2,section, .etc{
 	font-family: "Baloo 2", Yondu, Metropolis;
 	color: white;
 }
 p{
-	font-weight: 500px; /* el peso de las fuentes no se mide en px, solo con el número*/
-	font-style: bold; /* esta propiedad no se usa asi! bold es el peso de la fuente, no el estilo */
+	font-weight: 50;
+	font-style: normal; 
+	display: flex;
 	align-items: center; /* estás usando propidades de flex, pero hay un paso anterior que te estás olvidando para que flex se active */
 	align-content: center;
 	font-family: "Baloo 2", Yondu, Metropolis;
@@ -77,7 +83,7 @@ nav.botonera {
 	border: 2px solid grey;
 }
 .botonera a:hover{
-	color:#905daa;
+	color:ivory;
 	background-color:black;
 }
 
@@ -91,9 +97,21 @@ nav.botonera {
 footer {
 	background-color: white;
 	color: black;
-	text-align: center; /* esta propiedad de flex no funciona porque falta algo más */
+	justify-content: center;
+	flex-direction: row;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
 	align-content: center;
 	padding: 8px;
+}
+
+.redes-sociales{
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
 }
 .columna-izquierda, .columna-centro, .columna-derecha {
 	width: 45.33%;
